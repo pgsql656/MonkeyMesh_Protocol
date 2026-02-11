@@ -35,7 +35,7 @@ MonkeyMesh is not a single website; it is a protocol stack that runs locally on 
   * **Banano:** Used for micro-signals, spam prevention (PoW), and instant streaming payments.  
   * **Tezos:** Used for complex logic (Royalties, NFTs, DID Registries).
 
-### **Layer 4: The Storage (The Memory)**
+### **Layer 4: The Storage (The Trunk)**
 
 * **Tech:** IPFS (InterPlanetary File System).  
 * **Function:** Decentralized hosting for media (music, images) and social graphs.
