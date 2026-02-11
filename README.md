@@ -4,7 +4,7 @@
 
 ## **1\. Abstract**
 
-The current internet is broken. Users are farmed for data, algorithms dictate culture, and economic value is trapped in centralized silos. **MonkeyMesh** is a proposal for a new "Overlay Internet"—a decentralized, agent-first economy where users regain sovereignty. By combining local AI agents, a block-lattice ledger (Banano), and peer-to-peer transport (Nostr/IPFS), we create a "Dark Forest" where users are protected, work finds them, and content is owned, not rented.
+The current internet is broken. Users are farmed for data, algorithms dictate culture, and economic value is trapped in centralized silos. **MonkeyMesh** is a proposal for a new "Overlay Internet"—a decentralized, agent-first economy where users regain sovereignty. By combining local AI agents, a block-lattice ledger (Banano), and peer-to-peer transport (Nostr/IPFS), we create a "Jungle camp" where users are protected, services finds them, and content is owned, not rented.
 
 ## **2\. The Manifesto**
 
