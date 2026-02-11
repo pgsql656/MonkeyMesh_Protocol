@@ -1,18 +1,22 @@
 # **MonkeyMesh: The Agent Internet Protocol**
 
-
+**Litepaper v2.1** | *The Jungle Camp Edition*
 
 ## **1\. Abstract**
 
-The current internet is broken. Users are farmed for data, algorithms dictate culture, and economic value is trapped in centralized silos. **MonkeyMesh** is a proposal for a new "Overlay Internet"—a decentralized, agent-first economy where users regain sovereignty. By combining local AI agents, a block-lattice ledger (Banano), and peer-to-peer transport (Nostr/IPFS), we create a "Jungle Camp" where users are protected, services finds them, and content is owned, not rented.
+The internet is useful, but the power balance is off. We are tracked for ads, black-box algorithms dictate our culture, content creators are not fairly compensated, and our data is locked in corporate silos, monetized without consent. **MonkeyMesh** is a blueprint for a "User-Owned Web"—an overlay where your personal AI agent acts as your digital bodyguard, curator, headhunter, and executive assistant.
+
+In this "Jungle," **you fire the algorithm.** Instead of YouTube or Instagram deciding what you see, your agent builds a custom feed based on your actual tastes. **Instead of you chasing recruiters, your agent hunts for work**, scanning the mesh for gigs that match your skills and negotiating rates while you sleep. Service providers—like your dentist or a news subscription—have agents that talk directly to yours to handle payments or update your calendar. By combining local AI, a fee-less ledger (Banano), and peer-to-peer messaging (Nostr), we create a web where you are protected, opportunities find you, and you own your digital life.
 
 ## **2\. The Manifesto**
 
-We believe in three core truths:
+We believe the internet should work for you, not farm you.
 
-1. **Inversion of Control:** The user should not visit the web; the web should come to the user, filtered by their own AI.  
-2. **Sovereign Identity:** Your reputation, work history, and social graph belong to you, not a corporation.  
-3. **Frictionless Value:** Sending money should be as easy, free, and fast as sending a text message.
+* **Your Agent, Your Algorithm:** The user should not visit a website to be fed content; the content should come to the user, filtered and organized by their own local AI.  
+* **The Passive Hustle:** Work should find the worker. You shouldn't have to endlessly scroll job boards; your agent should act as a 24/7 talent scout, ensuring opportunities apply to *you*.  
+* **Service Fluidity:** A dentist appointment shouldn't require a phone call. Verified agents should handle scheduling, payments, and updates in the background, only notifying the human when necessary.  
+* **Sovereign Identity:** Your reputation, work history, and social graph belong to you. If a platform bans you, you don't lose your friends or your content.  
+* **Frictionless Value:** Sending money to a creator or paying a subscription should be as easy, free, and fast as sending a text message.
 
 ## **3\. The Architecture: "The Jungle Stack"**
 
@@ -26,7 +30,7 @@ MonkeyMesh is not a single website; it is a protocol stack that runs locally on 
 ### **Layer 2: The Transport (The Vines)**
 
 * **Tech:** Nostr (Notes and Other Stuff Transmitted by Relays) \+ WebRTC.  
-* **Function:** A censorship-resistant relay network. Agents broadcast "Signals" (encrypted JSON blobs) regarding job availability or content.
+* **Function:** A censorship-resistant relay network. Agents broadcast "Signals" (encrypted JSON blobs) regarding job availability, content updates, or service requests.
 
 ### **Layer 3: The Ledger (The Bananas)**
 
@@ -35,68 +39,54 @@ MonkeyMesh is not a single website; it is a protocol stack that runs locally on 
   * **Banano:** Used for micro-signals, spam prevention (PoW), and instant streaming payments.  
   * **Tezos:** Used for complex logic (Royalties, NFTs, DID Registries).
 
-### **Layer 4: The Storage (The Trunk)**
+### **Layer 4: The Storage (The Memory)**
 
 * **Tech:** IPFS (InterPlanetary File System).  
 * **Function:** Decentralized hosting for media (music, images) and social graphs.
 
 ## **4\. Core Modules**
 
-### **A. Work: The Gig Hunter**
+### **A. The Gig Hunter (Work)**
 
-* **Problem:** Job hunting is manual, repetitive, and centralized (LinkedIn).  
-* **Solution:** Users define a "Skill Profile." Their Agent passively scans the Mesh for matching "Job Signals."  
-* **Mechanism:**  
-  1. Company Agent broadcasts: `WANTED: CSS_WIZARD {Rate: 500 BAN}`.  
-  2. User Agent analyzes match locally.  
-  3. If match \> 90%, Agent auto-replies with verified credentials.  
-  4. Gig is booked; payment is streamed per milestone.
+* **Problem:** Job hunting is manual and repetitive.  
+* **Solution:** Users define a "Skill Profile." Their Agent passively scans the Mesh for matching "Job Signals" and auto-replies with credentials.
 
-### **B. Social: The Mirror & Bodyguard**
+### **B. The Social Mirror (Algorithm)**
 
-* **Problem:** Social media is curated by algorithms designed to maximize engagement (rage/addiction).  
-* **Solution:** The "Social Mirror."  
-* **Mechanism:**  
-  1. **Ingest:** Agent clones user posts from Web2 (X/Instagram) to IPFS.  
-  2. **Curate:** Agent downloads raw feeds from friends.  
-  3. **Filter:** Local LLM scrubs ads, rage-bait, and scams based on user's "Taste Profile."  
-  4. **Result:** A clean, sovereign feed.
+* **Problem:** Centralized algorithms promote rage-bait and ads.  
+* **Solution:** Your agent downloads raw feeds from creators you follow. It scrubs ads, filters noise based on your mood, and presents a clean feed. Creators have "Publisher Agents" that post once and distribute everywhere.
 
-### **C. Media: The SoundSystem**
+### **C. Service Sync (Life Admin)**
 
-* **Problem:** Artists earn fractions of pennies; platforms own the distribution.  
-* **Solution:** Direct-to-Fan streaming.  
-* **Mechanism:**  
-  1. Artist Agent uploads track to IPFS.  
-  2. Fan Agent streams file.  
-  3. **Payment:** A Banano payment stream opens (e.g., 0.01 BAN/sec). Money flows directly to the Artist Agent wallet. No middleman.
+* **Problem:** Scheduling and subscriptions are fragmented across email, phone, and apps.  
+* **Solution:** "Agent-to-Agent" Commerce.  
+  * *Example:* Your Dentist's agent sends a signed signal: Appointment changed to 2 PM. Your agent verifies the signature, checks your calendar, accepts the change, and notifies you.  
+  * *Example:* You subscribe to a "Premium News" agent. Your agent streams 1 BAN per article read, directly to the journalist.
 
-## **5\. Implementation Strategy (The Roadmap)**
+## **5\. Implementation Strategy**
 
 ### **Phase 1: "The Sprout" (MVP)**
 
 * **Goal:** Build the "Headhunter" module (Command Line Interface).  
-* **Deliverable:** A Python script that connects two local agents via Nostr and exchanges a Banano transaction upon a keyword match.  
-* **Target Audience:** Developers, Crypto-Natives.
+* **Deliverable:** A Python script utilizing the Nanobot framework to connect two local agents via Nostr.
 
 ### **Phase 2: "The Canopy" (GUI)**
 
-* **Goal:** User-friendly Desktop App (Electron/Tauri).  
-* **Deliverable:** The "MonkeyMesh" Dashboard. Visualizes the agent, manages keys, and provides the "Social Mirror" feed view.  
-* **Target Audience:** Early Adopters, Tech Privacy enthusiasts.
+* **Goal:** User-friendly Desktop App.  
+* **Deliverable:** The "MonkeyMesh" Dashboard. Visualizes the agent's activity, manages keys, and provides the "Social Mirror" feed view.
 
 ### **Phase 3: "The Ecosystem" (Mobile)**
 
 * **Goal:** Mobile App \+ Browser Extension.  
-* **Deliverable:** An extension that scrapes Twitter/LinkedIn context for the Agent. A mobile app for managing the wallet.  
-* **Target Audience:** General Public.
+* **Deliverable:** Full integration with daily life (Calendar, Wallet, Social).
 
 ## **6\. Request for Comment (RFC)**
 
 MonkeyMesh is an open protocol. We invite developers, cryptographers, and designers to join the mesh.
 
-* **Code:** https://github.com/pgsql656/MonkeyMesh_v1
+* **Code:** [https://github.com/pgsql656/MonkeyMesh\_v1](https://github.com/pgsql656/MonkeyMesh_v1)  
 * **telegram:** t.me/monkeymesh
+
 
 # **MonkeyMesh Prototype: Developer Guide (Nanobot Edition)**
 
