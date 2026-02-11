@@ -4,7 +4,7 @@
 
 ## **1\. Abstract**
 
-The internet is still useful, but the power balance is off. We are tracked for ads, black-box algorithms dictate our culture, content creators are not fairly compensated, and our data is locked in corporate silos, monetized without consent. **MonkeyMesh** is a blueprint for a "User-Owned Web"—an overlay where your personal AI agent acts as your digital bodyguard, curator, headhunter, and executive assistant.
+The internet is still useful, but the power balance is off. We are tracked for ads, black-box algorithms dictate our culture, content creators are not fairly compensated, and our data is locked in corporate silos, monetized without consent. **MonkeyMesh** is a blueprint for a "User-Owned Web", an overlay where your personal AI agent acts as your digital bodyguard, curator, headhunter, and executive assistant.
 
 In this "Jungle," **you fire the algorithm.** Instead of YouTube or Instagram deciding what you see, your agent builds a custom feed based on your actual tastes. **Instead of you chasing recruiters, your agent hunts for work**, scanning the mesh for gigs that match your skills and negotiating rates while you sleep. Service providers—like your dentist or a news subscription—have agents that talk directly to yours to handle payments or update your calendar. By combining local AI, a fee-less ledger (Banano), and peer-to-peer messaging (Nostr), we create a web where you are protected, opportunities find you, and you own your digital life.
 
@@ -24,7 +24,7 @@ MonkeyMesh is not a single website; it is a protocol stack that runs locally on 
 
 ### **Layer 1: The Brain (Local Intelligence)**
 
-* **Tech:** Ollama / Llama-3 (8B) / TinyLlama.  
+* **Tech:** Ollama / Llama-3 (8B) / TinyLlama. / Openclaw or Nanobot
 * **Function:** Runs locally on the user's hardware. Filters incoming feeds, detects scams, and negotiates contracts. No data leaves the device without explicit permission.
 
 ### **Layer 2: The Transport (The Vines)**
