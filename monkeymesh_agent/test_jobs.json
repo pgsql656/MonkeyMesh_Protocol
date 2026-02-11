@@ -1,0 +1,26 @@
+[
+  {
+    "type": "JOB_OFFER",
+    "id": "job-101",
+    "role": "Python Backend Developer",
+    "budget": "500 BAN",
+    "skills_required": ["python", "nostr", "asyncio"],
+    "description": "Need a script to listen to relay wss://relay.damus.io and filter for kind 1."
+  },
+  {
+    "type": "JOB_OFFER",
+    "id": "job-102",
+    "role": "Senior React Native Engineer",
+    "budget": "1200 BAN",
+    "skills_required": ["typescript", "react-native", "ios"],
+    "description": "Build a mobile wallet for Banano."
+  },
+  {
+    "type": "JOB_OFFER",
+    "id": "job-103",
+    "role": "Rust Systems Programmer",
+    "budget": "800 BAN",
+    "skills_required": ["rust", "tokio", "p2p"],
+    "description": "low-level networking for a new decentralized exchange."
+  }
+]

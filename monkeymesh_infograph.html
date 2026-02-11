@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonkeyMesh: The Agent Internet Protocol Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Palette: Energetic & Playful / MonkeyMesh Brand */
+            --color-primary: #FBDD11; /* Banana Yellow */
+            --color-secondary: #9B51E0; /* Purple */
+            --color-accent: #FF5F56; /* Red/Pink */
+            --color-dark: #2D2D2D;
+            --color-light: #F3F4F6;
+            --color-surface: #FFFFFF;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-light);
+            color: var(--color-dark);
+        }
+
+        h1, h2, h3, h4, .brand-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+        }
+
+        .neumorphic-card {
+            background: var(--color-surface);
+            border-radius: 1rem;
+            box-shadow: 10px 10px 20px #d1d9e6, -10px -10px 20px #ffffff;
+            transition: transform 0.3s ease;
+        }
+        
+        .neumorphic-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .layer-box {
+            transition: all 0.3s ease;
+        }
+        .layer-box:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <!-- 
+        Palette Used: "MonkeyMesh Radical Pop"
+        #FBDD11 (Primary Yellow)
+        #9B51E0 (Secondary Purple)
+        #FF5F56 (Accent Red)
+        #2D2D2D (Dark Text)
+        #FFFFFF (White Surface)
+    -->
+    <!-- 
+        Plan Summary:
+        1. Intro/Hook: The "Broken Internet" vs MonkeyMesh.
+        2. Manifesto: 3 Core Truths (Cards).
+        3. Web2 vs MonkeyMesh Comparison: Radar Chart (Goal: Compare).
+        4. The Jungle Stack: HTML/CSS Stack Diagram (Goal: Organize).
+        5. The Ledger: Banano vs Tezos Bar Chart (Goal: Compare).
+        6. Modules: HTML Cards (Work/Social/Media) (Goal: Inform).
+        7. Roadmap: Vertical Timeline (Goal: Change).
+    -->
+</head>
+<body class="antialiased selection:bg-yellow-300 selection:text-black">
+
+    <!-- HERO SECTION -->
+    <header class="w-full bg-[#2D2D2D] text-white py-12 md:py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
+                Monkey<span class="text-[#FBDD11]">Mesh</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-gray-300 max-w-2xl mx-auto">
+                The Agent Internet Protocol. A "Dark Forest" where users are protected, work finds them, and content is owned.
+            </p>
+            <div class="mt-8">
+                <span class="inline-block bg-[#FBDD11] text-black font-bold py-2 px-6 rounded-full text-lg shadow-lg transform rotate-2">
+                    Invert the Internet
+                </span>
+            </div>
+        </div>
+        <!-- Abstract Background Elements (CSS only) -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+            <div class="absolute top-10 left-10 w-32 h-32 rounded-full bg-[#9B51E0] blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-48 h-48 rounded-full bg-[#FBDD11] blur-3xl"></div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12 space-y-20">
+
+        <!-- SECTION 1: THE MANIFESTO -->
+        <section>
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-[#9B51E0]">The Manifesto</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+                    The current internet model farms users for data and traps value in silos. MonkeyMesh proposes three core truths to regain digital sovereignty.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="neumorphic-card p-8 text-center border-t-4 border-[#FBDD11]">
+                    <div class="text-4xl mb-4">🔄</div>
+                    <h3 class="text-xl font-bold mb-3">Inversion of Control</h3>
+                    <p class="text-gray-600 text-sm">
+                        You shouldn't visit the web. The web should come to you, filtered by your own local AI agent.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="neumorphic-card p-8 text-center border-t-4 border-[#9B51E0]">
+                    <div class="text-4xl mb-4">🆔</div>
+                    <h3 class="text-xl font-bold mb-3">Sovereign Identity</h3>
+                    <p class="text-gray-600 text-sm">
+                        Your reputation, work history, and social graph belong to you, not a corporation like LinkedIn or X.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="neumorphic-card p-8 text-center border-t-4 border-[#FF5F56]">
+                    <div class="text-4xl mb-4">💸</div>
+                    <h3 class="text-xl font-bold mb-3">Frictionless Value</h3>
+                    <p class="text-gray-600 text-sm">
+                        Sending money should be as easy, free, and fast as sending a text message using the Banano lattice.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: WEB2 vs MONKEYMESH (Radar Chart) -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+                    <div class="chart-container">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+                <!-- Visualization Context -->
+                <p class="text-xs text-center text-gray-400 mt-3 italic">
+                    Figure 1: Comparative analysis of system attributes between Traditional Web2 and the MonkeyMesh Protocol.
+                </p>
+            </div>
+            <div class="order-1 md:order-2">
+                <h2 class="text-3xl font-bold mb-4 text-[#2D2D2D]">The Paradigm Shift</h2>
+                <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                    Moving from a centralized server model to a decentralized agentic mesh fundamentally changes the internet's properties.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-[#9B51E0] mr-2 font-bold">✓</span>
+                        <span class="text-gray-700"><strong>Privacy:</strong> Data stays local on Layer 1 (Brain).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#9B51E0] mr-2 font-bold">✓</span>
+                        <span class="text-gray-700"><strong>Censorship Resistance:</strong> Relays (Nostr) prevent platform-wide bans.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#9B51E0] mr-2 font-bold">✓</span>
+                        <span class="text-gray-700"><strong>User Control:</strong> Agents negotiate on your behalf, filtering noise and ads.</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SECTION 3: THE JUNGLE STACK (HTML Diagram) -->
+        <section class="bg-white rounded-3xl p-8 md:p-12 shadow-xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-yellow-100 rounded-full blur-3xl -mr-20 -mt-20 opacity-50"></div>
+            
+            <div class="text-center mb-12 relative z-10">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">The Jungle Stack</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    MonkeyMesh is not a website; it is a protocol stack running locally on user devices. This architecture ensures sovereignty at every layer.
+                </p>
+            </div>
+
+            <!-- Stack Visual -->
+            <div class="max-w-4xl mx-auto space-y-4 relative z-10">
+                
+                <!-- Layer 1 -->
+                <div class="layer-box bg-gradient-to-r from-[#2D2D2D] to-[#4a4a4a] text-white p-6 rounded-xl flex flex-col md:flex-row items-center justify-between border-l-8 border-[#FBDD11]">
+                    <div class="md:w-1/3 mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold text-[#FBDD11]">Layer 1: The Brain</h3>
+                        <span class="text-xs uppercase tracking-wider opacity-70">Local Intelligence</span>
+                    </div>
+                    <div class="md:w-2/3 pl-0 md:pl-8 border-t md:border-t-0 md:border-l border-gray-600 pt-4 md:pt-0">
+                        <p class="text-sm text-gray-300 mb-2"><strong>Tech:</strong> Ollama / Llama-3 (8B) / TinyLlama</p>
+                        <p class="text-sm">Runs locally. Filters feeds, detects scams, and acts as the user's digital bodyguard. No data leaves without permission.</p>
+                    </div>
+                </div>
+
+                <!-- Layer 2 -->
+                <div class="layer-box bg-white border border-gray-200 p-6 rounded-xl flex flex-col md:flex-row items-center justify-between shadow-sm border-l-8 border-[#9B51E0]">
+                    <div class="md:w-1/3 mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold text-[#9B51E0]">Layer 2: The Transport</h3>
+                        <span class="text-xs uppercase tracking-wider text-gray-500">The Vines</span>
+                    </div>
+                    <div class="md:w-2/3 pl-0 md:pl-8 border-t md:border-t-0 md:border-l border-gray-200 pt-4 md:pt-0">
+                        <p class="text-sm text-gray-600 mb-2"><strong>Tech:</strong> Nostr + WebRTC</p>
+                        <p class="text-sm text-gray-600">Censorship-resistant relay network. Broadcasts encrypted "Signals" for jobs and content availability.</p>
+                    </div>
+                </div>
+
+                <!-- Layer 3 -->
+                <div class="layer-box bg-white border border-gray-200 p-6 rounded-xl flex flex-col md:flex-row items-center justify-between shadow-sm border-l-8 border-[#FF5F56]">
+                    <div class="md:w-1/3 mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold text-[#FF5F56]">Layer 3: The Ledger</h3>
+                        <span class="text-xs uppercase tracking-wider text-gray-500">The Bananas</span>
+                    </div>
+                    <div class="md:w-2/3 pl-0 md:pl-8 border-t md:border-t-0 md:border-l border-gray-200 pt-4 md:pt-0">
+                        <p class="text-sm text-gray-600 mb-2"><strong>Tech:</strong> Banano (Block Lattice) + Tezos</p>
+                        <p class="text-sm text-gray-600">Banano handles instant micro-payments and anti-spam PoW. Tezos handles smart contracts, royalties, and NFTs.</p>
+                    </div>
+                </div>
+
+                <!-- Layer 4 -->
+                <div class="layer-box bg-gray-50 border border-gray-200 p-6 rounded-xl flex flex-col md:flex-row items-center justify-between shadow-sm border-l-8 border-gray-400">
+                    <div class="md:w-1/3 mb-4 md:mb-0">
+                        <h3 class="text-xl font-bold text-gray-700">Layer 4: The Storage</h3>
+                        <span class="text-xs uppercase tracking-wider text-gray-500">The Memory</span>
+                    </div>
+                    <div class="md:w-2/3 pl-0 md:pl-8 border-t md:border-t-0 md:border-l border-gray-200 pt-4 md:pt-0">
+                        <p class="text-sm text-gray-600 mb-2"><strong>Tech:</strong> IPFS (InterPlanetary File System)</p>
+                        <p class="text-sm text-gray-600">Decentralized hosting for media, music, images, and social graphs. Content is pinned by the community.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 4: LEDGER EFFICIENCY (Bar Chart) -->
+        <section>
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold text-[#2D2D2D]">Economic Efficiency</h2>
+                <p class="text-gray-600 mt-2 max-w-2xl">
+                    Why use a dual-ledger system? We compare Banano (Instant/Free) and Tezos (Smart/Low-Fee) against traditional financial rails.
+                </p>
+            </div>
+            
+            <div class="bg-white p-6 md:p-10 rounded-2xl shadow-lg relative">
+                <div class="chart-container">
+                    <canvas id="barChart"></canvas>
+                </div>
+                 <!-- Visualization Context -->
+                 <p class="text-xs text-center text-gray-400 mt-3 italic">
+                    Figure 2: Efficiency Score (0-100) based on Speed, Cost, and Capability. Higher is better.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 5: CORE MODULES (Grid) -->
+        <section>
+            <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-[#2D2D2D]">Core Modules</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Module 1 -->
+                <div class="bg-gray-900 text-white p-8 rounded-2xl relative overflow-hidden group hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-[#FBDD11] rounded-bl-full opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <div class="text-5xl mb-4">💼</div>
+                    <h3 class="text-2xl font-bold mb-2">The Gig Hunter</h3>
+                    <p class="text-gray-400 text-sm mb-4">Work finds you.</p>
+                    <hr class="border-gray-700 mb-4">
+                    <p class="text-sm leading-relaxed">
+                        Your agent passively scans the Mesh for "Job Signals." If a 500 BAN gig matches your Skill Profile, it auto-replies with verified credentials.
+                    </p>
+                </div>
+
+                <!-- Module 2 -->
+                <div class="bg-gray-900 text-white p-8 rounded-2xl relative overflow-hidden group hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-[#9B51E0] rounded-bl-full opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <div class="text-5xl mb-4">🛡️</div>
+                    <h3 class="text-2xl font-bold mb-2">Social Mirror</h3>
+                    <p class="text-gray-400 text-sm mb-4">Your feed, your rules.</p>
+                    <hr class="border-gray-700 mb-4">
+                    <p class="text-sm leading-relaxed">
+                        Agents clone your Web2 posts to IPFS for safekeeping. Local LLMs scrub ads and rage-bait from your feed based on your personalized "Taste Profile."
+                    </p>
+                </div>
+
+                <!-- Module 3 -->
+                <div class="bg-gray-900 text-white p-8 rounded-2xl relative overflow-hidden group hover:scale-105 transition-transform duration-300">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-[#FF5F56] rounded-bl-full opacity-20 group-hover:opacity-40 transition-opacity"></div>
+                    <div class="text-5xl mb-4">🔊</div>
+                    <h3 class="text-2xl font-bold mb-2">SoundSystem</h3>
+                    <p class="text-gray-400 text-sm mb-4">Direct-to-Fan streaming.</p>
+                    <hr class="border-gray-700 mb-4">
+                    <p class="text-sm leading-relaxed">
+                        Artist agents upload to IPFS. Fan agents stream files. Payment streams (e.g., 0.01 BAN/sec) flow directly to the artist's wallet.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: ROADMAP (Vertical Timeline) -->
+        <section class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center text-[#2D2D2D]">Implementation Roadmap</h2>
+            
+            <div class="relative border-l-4 border-gray-200 ml-4 md:ml-0 space-y-12">
+                
+                <!-- Phase 1 -->
+                <div class="relative pl-12 md:pl-0">
+                    <div class="absolute left-[-10px] top-0 w-6 h-6 bg-[#FBDD11] rounded-full border-4 border-white shadow-md z-10"></div>
+                    <div class="md:flex items-start justify-between group">
+                        <div class="md:w-5/12 md:text-right pr-8 mb-2 md:mb-0">
+                            <span class="inline-block px-3 py-1 bg-gray-100 rounded-full text-xs font-bold text-gray-500 mb-2">Phase 1: MVP</span>
+                            <h3 class="text-xl font-bold group-hover:text-[#FBDD11] transition-colors">The Sprout</h3>
+                        </div>
+                        <div class="md:w-5/12 pl-0 md:pl-8">
+                            <p class="text-gray-600 text-sm">
+                                <strong>Goal:</strong> Build the "Headhunter" CLI module.
+                                <br>
+                                <strong>Deliverable:</strong> Python script connecting two local agents via Nostr to exchange BAN upon keyword match.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="relative pl-12 md:pl-0">
+                    <div class="absolute left-[-10px] top-0 w-6 h-6 bg-[#9B51E0] rounded-full border-4 border-white shadow-md z-10"></div>
+                    <div class="md:flex items-start justify-between group">
+                        <div class="md:w-5/12 md:text-right pr-8 mb-2 md:mb-0">
+                            <span class="inline-block px-3 py-1 bg-gray-100 rounded-full text-xs font-bold text-gray-500 mb-2">Phase 2: GUI</span>
+                            <h3 class="text-xl font-bold group-hover:text-[#9B51E0] transition-colors">The Canopy</h3>
+                        </div>
+                        <div class="md:w-5/12 pl-0 md:pl-8">
+                            <p class="text-gray-600 text-sm">
+                                <strong>Goal:</strong> User-friendly Desktop App (Electron/Tauri).
+                                <br>
+                                <strong>Deliverable:</strong> The "MonkeyMesh" Dashboard visualization and key management.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="relative pl-12 md:pl-0">
+                    <div class="absolute left-[-10px] top-0 w-6 h-6 bg-[#FF5F56] rounded-full border-4 border-white shadow-md z-10"></div>
+                    <div class="md:flex items-start justify-between group">
+                        <div class="md:w-5/12 md:text-right pr-8 mb-2 md:mb-0">
+                            <span class="inline-block px-3 py-1 bg-gray-100 rounded-full text-xs font-bold text-gray-500 mb-2">Phase 3: Mobile</span>
+                            <h3 class="text-xl font-bold group-hover:text-[#FF5F56] transition-colors">The Ecosystem</h3>
+                        </div>
+                        <div class="md:w-5/12 pl-0 md:pl-8">
+                            <p class="text-gray-600 text-sm">
+                                <strong>Goal:</strong> Mobile App + Browser Extension.
+                                <br>
+                                <strong>Deliverable:</strong> Extensions to scrape Context from Web2. Full mobile wallet integration.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center py-12 border-t border-gray-200 mt-12 text-sm text-gray-500">
+            <p>Drafted for The Jungle. MonkeyMesh is an open protocol.</p>
+        </footer>
+
+    </main>
+
+    <script>
+        // --- 1. RADAR CHART: Web2 vs MonkeyMesh ---
+        // Justification: Radar charts are excellent for comparing multivariate data (attributes of systems) to show strengths and weaknesses shape.
+        const ctxRadar = document.getElementById('radarChart').getContext('2d');
+        const radarChart = new Chart(ctxRadar, {
+            type: 'radar',
+            data: {
+                // Short labels for clean radar display
+                labels: ['Privacy', 'User Control', 'Cost Efficiency', 'Transaction Speed', 'Censorship Resistance'],
+                datasets: [{
+                    label: 'MonkeyMesh',
+                    data: [5, 5, 5, 5, 5],
+                    backgroundColor: 'rgba(251, 221, 17, 0.4)', // Banana Yellow with opacity
+                    borderColor: '#FBDD11',
+                    pointBackgroundColor: '#2D2D2D',
+                    borderWidth: 2
+                }, {
+                    label: 'Traditional Web 2.0',
+                    data: [1, 2, 3, 4, 2],
+                    backgroundColor: 'rgba(155, 81, 224, 0.2)', // Purple with opacity
+                    borderColor: '#9B51E0',
+                    pointBackgroundColor: '#9B51E0',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    r: {
+                        angleLines: { color: '#eee' },
+                        grid: { color: '#eee' },
+                        pointLabels: {
+                            font: { size: 12, family: 'Inter' },
+                            color: '#555'
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 5,
+                        ticks: { display: false } // Hide numbers for cleaner look
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: { font: { family: 'Space Grotesk' } }
+                    },
+                    tooltip: {
+                        backgroundColor: '#2D2D2D',
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                    return label.join(' ');
+                                } else {
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // --- 2. BAR CHART: Economic Efficiency ---
+        // Justification: A Bar chart clearly compares discrete categories (Payment rails) across a unified metric (Efficiency Score).
+        const ctxBar = document.getElementById('barChart').getContext('2d');
+        
+        // Wrap labels logic (although short here, good practice per requirements)
+        const barLabels = ['Banano (Layer 3)', 'Tezos (Layer 3)', 'Credit Card (Web2)', 'SWIFT (Legacy)'];
+        
+        const barChart = new Chart(ctxBar, {
+            type: 'bar',
+            data: {
+                labels: barLabels,
+                datasets: [{
+                    label: 'Efficiency Score (Speed + Cost + Utility)',
+                    data: [95, 85, 60, 15],
+                    backgroundColor: [
+                        '#FBDD11', // MonkeyMesh / Banano
+                        '#9B51E0', // Tezos
+                        '#d1d5db', // Grey for traditional
+                        '#9ca3af'  // Darker grey for legacy
+                    ],
+                    borderWidth: 0,
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: { color: '#f3f4f6' },
+                        ticks: { font: { family: 'Inter' } }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { font: { family: 'Inter' } }
+                    }
+                },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#2D2D2D',
+                        callbacks: {
+                            title: function(tooltipItems) {
+                                const item = tooltipItems[0];
+                                let label = item.chart.data.labels[item.dataIndex];
+                                if (Array.isArray(label)) {
+                                    return label.join(' ');
+                                } else {
+                                    return label;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

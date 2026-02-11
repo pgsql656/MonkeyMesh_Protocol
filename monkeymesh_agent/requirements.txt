@@ -1,0 +1,4 @@
+requests==2.31.0
+# The following will be needed for the live version:
+# nostr-sdk
+# bananopie
