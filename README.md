@@ -1,6 +1,6 @@
 # **MonkeyMesh: The Agent Internet Protocol**
 
-**Litepaper v1.0** | *Drafted for The Jungle*
+
 
 ## **1\. Abstract**
 
