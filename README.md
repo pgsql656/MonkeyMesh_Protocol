@@ -32,9 +32,9 @@ This litepaper covers what that looks like, why it works now, and how it ships.
 
 ---
 
-## 2. The Pitch, in Three Beats
+## 2. The Pitch
 
-### Beat 1. Your AI runs the feed `(•⩊•)`
+### 1. Your AI runs the feed `(•⩊•)`
 
 Right now, an algorithm at X or Meta or ByteDance decides what you see. Its goals are not your goals. It optimizes for time-on-site and ad impressions.
 
@@ -42,7 +42,7 @@ In MonkeyMesh, your agent is the algorithm. It learns your taste through swipe-t
 
 > *You should not visit the web. The web should come to you, filtered by your own AI.*
 
-### Beat 2. No migration `┐(￣ヮ￣)┌`
+### 2. No migration `┐(￣ヮ￣)┌`
 
 Every alternative social network in the last decade has asked you to leave. Mastodon. Bluesky. Farcaster. Lens. Each one a good idea trapped in a bad ask: rebuild your social graph from scratch on a platform with a tenth of the content and none of your friends.
 
@@ -50,7 +50,7 @@ MonkeyMesh doesn't ask. It rides on top. Your X feed, your Instagram timeline, y
 
 The technical name is *overlay*. The user-facing version is: it just works on day one.
 
-### Beat 3. Sovereign by design `⊂(◉‿◉)つ`
+### 3. Sovereign by design `⊂(◉‿◉)つ`
 
 Once your agent knows your taste, the natural question is: who else has a copy?
 
